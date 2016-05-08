@@ -11,7 +11,7 @@ O segredo para construir grandes aplicações é nunca construir aplicações gr
 
 – Justin Meyer, autor de JavaScript MVC
 
-[Source](http://bitovi.com/blog/2010/11/organizing-a-jquery-application.html)
+[Fonte](http://bitovi.com/blog/2010/11/organizing-a-jquery-application.html)
 
 ## Qualidade importa
 
@@ -19,70 +19,69 @@ Quando eu ouço "Um código que apenas chute pro gol, rode e funcione" eu penso 
 
 – Avdi Grimm
 
-[Source](https://twitter.com/#!/avdi/status/180747721852985344)
+[Fonte](https://twitter.com/#!/avdi/status/180747721852985344)
 
 ## Não escreva código! 
 
-Não escreva código (só escreva código novo quando tudo mais que existe estiver falhando) é a mais importante lição que todo desenvolvedor deveria aprender. The amount of duplicate, crappy code (across projects) that exists today is overwhelming. In a lot of cases developers don’t even bother to look around. They just want to write code.
+Não escreva código (só escreva código novo quando tudo mais que existe estiver falhando) é a mais importante lição que todo desenvolvedor deveria aprender. A quantidade de duplicidade, de código mal feito por aí, atualmente é enorme. Em muitos caso, os desenvolvedores não se incomodam em olhar ao redor [para usar o que é bom]. Eles apenas querem escrever código. 
 
-[Source](http://blogs.agilefaqs.com/2009/10/19/biggest-stinkers/)
+[Fonte](http://blogs.agilefaqs.com/2009/10/19/biggest-stinkers/)
 
-#### Reducing the amount of code in your product should be a goal.
+#### Reduzir a quantidade de código em seu projeto deveria ser um objetivo.
 
-"I hate code, and I want as little of it as possible in our product."
+"Eu odeio código, e eu quero o menos possível em nosso projeto"
 – Jack Diederich
 
-[Source](http://pyvideo.org/video/880/stop-writing-classes)
+[Fonte](http://pyvideo.org/video/880/stop-writing-classes)
 
-#### Keep Lean Dependencies
-The old adage "don't reinvent the wheel" doesn't apply when the wheel comes attached to a locomotive engine.
+#### Mantenha dependência enxutas
 
-[Source](http://www.reddit.com/r/programming/comments/1bcebh/programming_best_practices/c9616mn)
+O velho ditado "não reinvente a roda" não se aplica quando a roda vem acoplada a um motor de locomotiva.
 
-#### Don't expect a rewrite to do better than the original
-It's important to remember that when you start from scratch there is absolutely no reason to believe that you are
-going to do a better job than you did the first time. First of all, you probably don't even have the same
-programming team that worked on version one, so you don't actually have "more experience". You're just going to make
-most of the old mistakes again, and introduce some new problems that weren't in the original version.
+[Fonte](http://www.reddit.com/r/programming/comments/1bcebh/programming_best_practices/c9616mn)
+
+#### Não espere que uma reescrita seja melhor que o original
+
+É importante lembrar que quando você inicial algo a partir do zero não há absolutamente nenhuma razão para acreditar que você fará um trabalho melhor do que fez pela primeira vez. Em primeiro lugar, você provavelmente ainda tem a mesma equipe de programação que trabalhou na versão inicial, então na verdade vocês não tem necessariamente "mais experiência". Você só vai fazer a maioria dos antigos erros novamente, e introduzir alguns novos problemas que não estavam na versão original.
 
 – Joel Spolsky
 
-[Source](http://www.joelonsoftware.com/articles/fog0000000069.html)
+[Fonte](http://www.joelonsoftware.com/articles/fog0000000069.html)
 
-## Stop Writing Classes
+## Pare de escrever classes
 
-The signature of "this shouldn't be a class" is when the class has two methods, and one of them is the constructor.
-Any time you see these signs, you probably should have just written a function.
+A assinatura que diz "isso deveria ser uma classe" existe quando a classe tem dois métodos, e um deles é o constructor. Se a qualquer hora você ver esses sinais, você provavelmente deveria ter escrito apenas uma função.
 
 – Jack Diederich
 
-[Source](http://pyvideo.org/video/880/stop-writing-classes)
+[Fonte](http://pyvideo.org/video/880/stop-writing-classes)
 
-## Forget new features, Just do the same stuff better.
+## Esqueça novas funcionalidades, melhore as coisas que já existem
 
-The problem: it is too easy to lose sight of what users often care about more, which is the performance and usability of the applications and features they already use most often.
+O problema: é muito fácil perder de vista o que os usuários se importam com mais frequência, isto é, a performance e a usabilidade da aplicação e das funcionalidades que eles já usam cotidianamente. 
 
 – Tim Anderson
 
-[Source](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
+[Fonte](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
 
-## Reinvent the Wheel
-Inventing your own wheels gives you a deep appreciation and understanding of how wheels work and what makes a good one.
+## Reinvente a roda
 
-[Source](http://nodejs.debuggable.com/2011-02-26.txt)
+Inventar suas próprias rodas dá a você um profundo saber e entendimento sobre como as rodas funcionam e o que as faz boas.
 
-## Don't do hard things, do easy things.
+[Fonte](http://nodejs.debuggable.com/2011-02-26.txt)
 
-* Simple is better than complex.
-* Complex is better than complicated.
-* Flat is better than nested.
-* Readability counts.
-* If the implementation is hard to explain, it's a bad idea.
-* If the implementation is easy to explain, it may be a good idea.
+## Não faça coisas difícies, faça coisas fáceis! 
+
+* Simples é melhor do que complexo.
+* Complexo é melhor que complicado. 
+* Plano é melhor que aninhado.
+* Legibilidade conta. 
+* Se a implementação é dificil de explicar, é uma ideia ruim. 
+* Se a implementação é fácil de explicar, pode ser uma boa ideia. 
 
 – The Zen of Python
 
-[Source](http://www.python.org/dev/peps/pep-0020/)
+[Fonte](http://www.python.org/dev/peps/pep-0020/)
 
 Shortlist cut from [Jack Diederich's "Stop Writing Classes" talk](http://pyvideo.org/video/880/stop-writing-classes)
 
@@ -103,7 +102,7 @@ If you are changing more than 25% of a class or method, consider simply rewritin
 3. Refactoring Can Cleanup The Code
 4. You Don't Control The Rewrite, It Controls You
 
-[Source](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
+[Fonte](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
 
 
 ## Accept that you have no idea how this will grow
@@ -112,14 +111,14 @@ The key is to acknowledge from the start that you have no idea how this will gro
 
 – Nicholas Zakas, author "High-performance JavaScript websites"
 
-[Source](http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html)
+[Fonte](http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html)
 
 [Acknowledgement to Addy Osmani](http://addyosmani.com/largescalejavascript/)
 
 ## Avoid Code Smells
 
-[Source](http://www.codinghorror.com/blog/2006/05/code-smells.html)  
-[Source](http://web.archive.org/web/20120130234037/http://stackoverflow.com/questions/114342/what-are-code-smells-what-is-the-best-way-to-correct-them)
+[Fonte](http://www.codinghorror.com/blog/2006/05/code-smells.html)  
+[Fonte](http://web.archive.org/web/20120130234037/http://stackoverflow.com/questions/114342/what-are-code-smells-what-is-the-best-way-to-correct-them)
 
 
 ## Write unit tests.
@@ -130,7 +129,7 @@ Programmers burn out from just such cycles.
 Breaking out requires an outside influence. We found the outside influence we needed in a simple testing framework that lets us do a little testing that
 makes a big difference.
 
-[Source](http://junit.sourceforge.net/doc/testinfected/testing.htm)
+[Fonte](http://junit.sourceforge.net/doc/testinfected/testing.htm)
 
 
 #### [Without unit tests] You're not refactoring, you're just changing shit. — Hamlet D'Arcy
@@ -169,9 +168,9 @@ makes a big difference.
 * Class has fields that are only used in some methods
 * Class has static methods that only operate on parameters
 
-[Source](http://misko.hevery.com/code-reviewers-guide/)
+[Fonte](http://misko.hevery.com/code-reviewers-guide/)
 
-[Source](http://misko.hevery.com/presentations/)
+[Fonte](http://misko.hevery.com/presentations/)
 
 ## Test-Driven Development with Inversion of Control.
 
@@ -179,7 +178,7 @@ Even if you aren't testing your code, you should write testable code. IoC enable
 
 ## Avoid mixing Object Creation with Application Logic
 
-[Source](http://misko.hevery.com/2008/09/30/2008/07/08/how-to-think-about-the-new-operator/)
+[Fonte](http://misko.hevery.com/2008/09/30/2008/07/08/how-to-think-about-the-new-operator/)
 
 ## Avoid creating technical debt.
 
@@ -187,14 +186,14 @@ Even if you aren't testing your code, you should write testable code. IoC enable
 ).* Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation ...”
 (Emphasis mine)
 
-[Source](http://c2.com/doc/oopsla92.html)
+[Fonte](http://c2.com/doc/oopsla92.html)
 
 
 ## Premature optimisation is the root of all evil
 
 "Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."
 
-[Source](http://c2.com/cgi/wiki?PrematureOptimization)
+[Fonte](http://c2.com/cgi/wiki?PrematureOptimization)
 
 ## Plan, Plan, Plan.
 
@@ -214,19 +213,19 @@ For this to work, everyone involved has to listen, everyone has to be open, ever
 
 – Reginald Braithwaite
 
-[Source](http://www.theserverside.com/tt/articles/article.tss?l=ProgrammingisAlsoTeachingYourTeam)
+[Fonte](http://www.theserverside.com/tt/articles/article.tss?l=ProgrammingisAlsoTeachingYourTeam)
 
 ### "The most important element of successful software development is learning."
 When the entire team meets a certain standard for competence, there is a very large learning surface exposed and the team is able to absorb more information.
 
-[Source](http://weblog.raganwald.com/2007/06/which-theory-first-evidence.html)
+[Fonte](http://weblog.raganwald.com/2007/06/which-theory-first-evidence.html)
 
 ## "...there are lies, damned lies, and software development estimates."
 
 Software can only partially be designed in advance. ... requirements suffer from observation, that the act of building software causes the requirements to change. ...technical factors cannot be perfectly understood, that only the act of trying to build something with specific components will reveal all of the gotchas and who-knews associated with a chosen technology strategy. ...software design is an iterative process, starting with a best guess that is continually refined with experience.
 the normal case for software projects is that tasks are rarely completed exactly as estimated, but that as a project progresses, the aggregate variance from estimates falls.
 
-[Source](http://weblog.raganwald.com/2007/06/which-theory-first-evidence.html)
+[Fonte](http://weblog.raganwald.com/2007/06/which-theory-first-evidence.html)
 
 Nobody likes to look stupid. If you’re a professional and someone puts you on the spot to answer “how long will this take?” it’s only human to want to provide an answer. Whether you call it professional pride or ego, it’s a powerful driver.
 Good IT workers really don’t like saying “I don’t know.” If they say it, they probably mean it. So stop pushing for a definitive answer when one doesn’t exist.It’s perfectly reasonable to want some sort of plan up front. I’m actually one of those funny types who believe up front planning is a necessity. So long as everyone understands an estimate is just that: an estimate. You learn as you go along and discover more detail. So you revise the estimate accordingly.
@@ -243,7 +242,7 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 
 – Uncle Bob Martin, "Screaming Architecture"
 
-[Source](http://blog.8thlight.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
+[Fonte](http://blog.8thlight.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
 
 ## Follow the principles of X
 
@@ -255,7 +254,7 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 * Isolate complexity as much as possible.
 * Provide mechanism rather than policy. In particular, place user interface policy in the clients' hands.
 
-[Source](http://en.wikipedia.org/wiki/X_Window_System_protocols_and_architecture#Design_principles)
+[Fonte](http://en.wikipedia.org/wiki/X_Window_System_protocols_and_architecture#Design_principles)
 
 
 ## Follow the principles of Unix
@@ -282,7 +281,7 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 
 – Eric S. Raymond, "The Art of Unix Programming"
 
-[Source](http://www.catb.org/esr/writings/taoup/html/ch01s06.html)
+[Fonte](http://www.catb.org/esr/writings/taoup/html/ch01s06.html)
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/timoxley/best-practices/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
