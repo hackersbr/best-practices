@@ -83,70 +83,70 @@ Inventar suas próprias rodas dá a você um profundo saber e entendimento sobre
 
 [Fonte](http://www.python.org/dev/peps/pep-0020/)
 
-Shortlist cut from [Jack Diederich's "Stop Writing Classes" talk](http://pyvideo.org/video/880/stop-writing-classes)
+Pequena lista extraída da [Palestra "Pare de Escrever Classes" por Jack Diederich](http://pyvideo.org/video/880/stop-writing-classes)
 
-## Rewriting > Refactoring
-If you are changing more than 25% of a class or method, consider simply rewriting it. You will write the code more cleanly.
+## Reescrever > Refatorar
 
-## Refactoring > Rewriting
+Se você está mudando mais de 25% de uma classe ou método, considere simplesmente rescrevê-lo. Você irá escrever o código mais claramente. 
 
-#### Common Excuses For A Software Rewrite
-1. The Code Sucks
-2. "We're So Much Smarter Now"
-3. We Picked The Wrong Platform/Language
+## Refatorando > Reescrevendo
 
-#### Why Rewriting Is (Almost) Never A Good Idea
-1. [It Always Takes Longer Than You Expect](http://en.wikipedia.org/wiki/Hofstadter's_law)
-2. Markets Change
-2. Existing Customers Become Frustrated
-3. Refactoring Can Cleanup The Code
-4. You Don't Control The Rewrite, It Controls You
+#### Desculpas comuns para a reescrita de um software
+1. O código é uma porcaria
+2. "Nós estamos melhores agora"
+3. Nós escolhemos a plataforma/linguagem errada
+
+#### Porque reescrever é (quase) nunca uma boa ideia
+1. [Sempre demora mais do que você imagina](http://en.wikipedia.org/wiki/Hofstadter's_law)
+2. Os mercados mudam
+2. Clientes já existentes ficam frustrados
+3. Refatoração pode limpar o código
+4. Você não controla a reescrita, ela controla você
 
 [Fonte](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
 
 
-## Accept that you have no idea how this will grow
+## Aceite que você não tem ideia de como isso irá crescer
 
-The key is to acknowledge from the start that you have no idea how this will grow. When you accept that you don't know everything, you begin to design the system defensively... You should spend most of your time thinking about interfaces rather than implementations.
+A chave é reconhecer desde o início que você não tem idéia de como isso irá crescer. Quando você aceita que você não sabe tudo, você começa a projetar o sistema defensivamente ... Você deveria gastar a maior parte do seu tempo pensando sobre interfaces em vez de implementações.
 
-– Nicholas Zakas, author "High-performance JavaScript websites"
+– Nicholas Zakas, autor de "Alta performance em websites Javascripts"
 
 [Fonte](http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html)
 
-[Acknowledgement to Addy Osmani](http://addyosmani.com/largescalejavascript/)
+[Agradecimentos a Addy Osmani](http://addyosmani.com/largescalejavascript/)
 
-## Avoid Code Smells
+## Evite o "cheiro de código"
 
-[Fonte](http://www.codinghorror.com/blog/2006/05/code-smells.html)  
+[Fonte](http://www.codinghorror.com/blog/2006/05/code-smells.html)
 [Fonte](http://web.archive.org/web/20120130234037/http://stackoverflow.com/questions/114342/what-are-code-smells-what-is-the-best-way-to-correct-them)
 
 
-## Write unit tests.
-Every programmer knows they should write tests for
-their code. Few do. The universal response to "Why not?" is "I'm
-in too much of a hurry." This quickly becomes a vicious cycle- the more pressure you feel, the fewer tests you write. The fewer tests you write, the less productive you are and the less stable your code becomes. The less productive and accurate you are, the more pressure you feel.
-Programmers burn out from just such cycles.
-Breaking out requires an outside influence. We found the outside influence we needed in a simple testing framework that lets us do a little testing that
-makes a big difference.
+## Escreva testes unitários
+
+Cada programador sabe que deve escrever testes para o seu código. Poucos fazem. A resposta universal para "Por que não?" é "Eu não tenho tempo." Isto rapidamente cria um ciclo vicioso: quanto mais mais pressão você sente, menos testes que você escreve. Com os poucos testes que você escreve, menos produtivo você fica e menos estável o seu código se torna. E quanto menos produtivo e preciso você for, maior a pressão que você sente. Programadores ficam esgotados com esses ciclos. 
+
+Quebrar esse ciclo vicioso requer uma influencia externa. É possível encontrar a influência externa que precisávamos em um simples framework de testes que nos ajuda fazendo pequenos testes que fazem uma grande diferença.
 
 [Fonte](http://junit.sourceforge.net/doc/testinfected/testing.htm)
 
 
-#### [Without unit tests] You're not refactoring, you're just changing shit. — Hamlet D'Arcy
+#### [Sem testes unitários] Você não está refatorando, você está apenas mexendo na merda. — Hamlet D'Arcy
 
-## To write effective unit tests, you need to write testable code
+## Para esquecer testes unitários efetivos, você precisa escrever código testável
 
-### Flaw #1: Constructor does Real Work
-#### Warning Signs
-* new keyword in a constructor or at field declaration
-* Static method calls in a constructor or at field declaration
-* Anything more than field assignment in constructors
-* Object not fully initialized after the constructor finishes (watch out for initialize methods)
-* Control flow (conditional or looping logic) in a constructor
-* Code does complex object graph construction inside a constructor rather than using a factory or builder
-* Adding or using an initialization block
+### Falha #1: Contrutores fazem trabalho real
+#### Sinais de perigo
 
-### Flaw #2: Digging into Collaborators
+* Nova palavra chave em um construtor ou em um campo declarado
+* Método estático chama algo em um construtor ou em uma declaração de campo
+* Qualquer coisa além de um campo declarado em um construtor
+* Objeto não totalmente inicializado após a conclusão do construtor (observer a inicialização dos métodos)
+* Controle de fluxo (condicional ou looping) em um construtor
+* Código fazendo a construção de um objeto gráfico dentro de um construtor ao invés de usar um método Factory
+* Adição ou uso de um bloco de inicialização
+
+### Falha #2: Digging into Collaborators
 #### Warning Signs
 * Objects are passed in but never used directly (only used to get access to other objects)
 * Law of Demeter violation: method call chain walks an object graph with more than one dot (.)
@@ -244,7 +244,7 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 
 [Fonte](http://blog.8thlight.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
 
-## Follow the principles of X
+## Siga os princípios do X
 
 * Do not add new functionality unless you know of some real application that will require it.
 * It is as important to decide what a system is not as to decide what it is. Do not serve all the world's needs; rather, make the system extensible so that additional needs can be met in an upwardly compatible fashion.
@@ -257,7 +257,7 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 [Fonte](http://en.wikipedia.org/wiki/X_Window_System_protocols_and_architecture#Design_principles)
 
 
-## Follow the principles of Unix
+## Siga os princípios UNIX
 
 "This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface" - Doug McIlroy, quoted in A Quarter Century of Unix [Salus]. Addison-Wesley. 1994. ISBN 0-201-54777-5.
 
@@ -279,7 +279,7 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 * Rule of Diversity: Distrust all claims for “one true way”.
 * Rule of Extensibility: Design for the future, because it will be here sooner than you think.
 
-– Eric S. Raymond, "The Art of Unix Programming"
+– Eric S. Raymond, "A Arte da programação UNIX"
 
 [Fonte](http://www.catb.org/esr/writings/taoup/html/ch01s06.html)
 
